@@ -1,0 +1,25 @@
+<!--login.wxml-->
+<view class="container">
+  <image class="titlepic" src="/images/more/title.png"> </image>
+  <view class="card1">
+    <view class="section1"> 
+    <view class="headname">🔑某大身份认证</view>
+    <view class="helpname">请使用学号及教务系统密码登陆，如果忘记了密码，您可以:1.联系本学院教学秘书 2.携带有效证件去教务处重置密码 3.登陆网页版教务系统在线找回密码</view>
+    </view>
+    <view class="section2">
+      <view class="motto1">账号</view>
+      <view class="userauth">
+        <input class="userauthinput" type="number" maxlength='10' placeholder='学号' bindinput='useridInput'> </input>
+      </view>
+    </view>
+    <view class="section3">
+      <view class="motto1">密码</view>
+      <view class="userpin">
+        <input class="userpininput" password type='text' placeholder='教务系统密码' bindinput='pwdInput'> </input>
+      </view>
+    </view>
+    <view>
+      <button class='loginbtn' type='primary' bindtap='logintap'>登陆</button>
+    </view>
+  </view>
+</view>
