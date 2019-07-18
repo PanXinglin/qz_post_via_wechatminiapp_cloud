@@ -9,7 +9,7 @@ exports.main = async (event, context) => {
     let postResponse = await got(urll, {
       method: 'POST', //post请求
       headers: {
-        'Content-Type': 'application/json',
+        'Content-Type': 'application/json',//这里不要变
         //‘token':'qerinn54j049jg'
         //要用token的写在这，可以再加一个参数直接传过来即可
       },
