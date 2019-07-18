@@ -23,13 +23,6 @@ Page({
       passwd: e.detail.value
     });
   },
-  helptap: function() {
-    wx.showModal({
-      showCancel: 'false',
-      title: '帮助',
-      content: '如果忘记了密码，请携带有效证件去教务处重置密码！',
-    })
-  },
   logintap: function() {
     if (!this.data.userid || !this.data.passwd) {
       wx.showModal({
